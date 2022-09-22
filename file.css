@@ -1,0 +1,134 @@
+main{
+    display: flex;
+
+}
+p ,h1,h2{
+    margin: 0px;
+}
+.img{
+    background-image: url(images/image-product-desktop.jpg);
+    width: 305px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+@media (max-width:641px) {
+    .img{
+        background-image: url(images/image-product-mobile.jpg);
+        width: initial;
+        height: 260px;
+        border-top-right-radius: 10px;
+            border-bottom-left-radius: 0px;
+
+    }
+    main{
+        flex-direction: column;
+
+    }
+    .container{
+        gap: 14px !important;
+        border-top-right-radius: 0px !important;
+        border-bottom-left-radius: 10px !important;
+    }
+}
+:root{
+--secondfont-family: 'Fraunces', serif;
+--firstfont-family: 'Montserrat', sans-serif;
+
+}
+body{
+
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+    background-color: white;
+    padding: 35px 0px 35px 35px;
+    gap: 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    
+}
+.container h1{
+    font-family: var(--secondfont-family);
+        font-size: 35px;
+    line-height: 0.9;
+    width: 85%;
+}
+.container > p:first-of-type{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: var(--firstfont-family);
+    letter-spacing: 6px;
+    font-weight: 500;
+
+}
+.container h1 +p {
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--firstfont-family);
+ 
+    width: 86%;
+    line-height: 1.6;
+
+    word-spacing: 4.2px;
+}
+.container h1 +p{
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--firstfont-family);
+        padding-right: 53px;
+line-height: 1.7;
+    word-spacing: 4.2px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+.price h2{
+    color: hsl(158, 36%, 37%);
+    font-weight:700;
+    font-family: var(--secondfont-family);
+    font-size: 30px;
+}
+.price p{
+    font-size: 14px;
+    text-decoration: line-through;
+    font-family: var(--firstfont-family);
+    font-family: 500;
+    color: hsl(228, 12%, 48%);
+}
+button{
+    background-color: hsl(158, 36%, 37%);
+    border:none;
+    border-radius: 10px;
+    color: white;
+    padding: 18px;
+    width: 88%;
+    font-family: var(--firstfont-family);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+
+}
+button:hover{
+    background-color: #1a4031;
+}
